@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  // Extract ASIN from the URL
+  const asin = window.location.pathname.split('/').pop();
+
+  // Build Amazon affiliate URL
+  const target = `https://www.amazon.com/dp/${asin}?tag=aureliaaistud-20`;
+
+  // Redirect
+  window.location.href = target;
+</script>
+</head>
+<body></body>
+</html>
